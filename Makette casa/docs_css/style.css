@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 20px; */
+}
+header ul {
+     width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(164, 203, 237);
+    /* background-color: transparent;
+    backdrop-filter: blur(10px); */
+    height: 90px;
+}
+header div.img_texte {
+background: url(../images/bg.jpg);
+background-size: cover;
+height: 700px;
+}
+header div.img_texte {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+header div.img_texte p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+header div.img_texte h1{
+    text-align: center;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 6em;
+}
+/* POUR LA SECTION */
+section div.para{
+    text-transform: uppercase;
+    color: rgb(9, 93, 104);
+    background-color: rgb(179, 214, 240);
+    height: 50px;
+    font-weight: bold;
+}
+/* pour les positions */
+section div.para{
+       display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
