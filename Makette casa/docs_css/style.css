@@ -10,6 +10,11 @@ header ul li {
   justify-content: space-between;
   /* margin-right: 20px; */
 }
+header li.border {
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px;
+  border: 1.5px solid white;
+}
 header ul {
   width: 450px;
   display: flex;
@@ -18,43 +23,51 @@ header ul {
 header a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+/* pour le logo la casa */
+nav div.logo {
+  font-size: 1.7em;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(9, 93, 104, 0.7);
-  /* background-color: transparent;
-    backdrop-filter: blur(10px); */
-  height: 90px;
+  background-color: transparent;
+  backdrop-filter: blur(200em);
+  height: 70px;
+  opacity: 15;
 }
-header div.img_texte {
+header {
   background: url(../images/bg.jpg);
   background-size: cover;
   height: 700px;
 }
-header div.img_texte {
+header h1,
+p {
   text-align: center;
   color: #fff;
   letter-spacing: 1.5px;
 }
-header div.img_texte p {
+header p {
   text-align: center;
   color: #fff;
   font-size: 1.5em;
 }
-header div.img_texte h1 {
+header h1 {
   text-align: center;
   color: #fff;
+  font-style: italic;
   font-family: "Dancing Script", cursive;
   font-size: 6em;
 }
 /* POUR LA SECTION */
 section div.para {
   text-transform: uppercase;
-  color: rgb(9, 93, 104);
-  background-color: rgb(179, 214, 240);
+  color: rgb(54, 108, 115);
+  background-color: rgb(119, 178, 195);
   height: 50px;
   font-weight: bold;
 }
@@ -69,13 +82,14 @@ section div.para {
 .produits {
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
   gap: 30px 40px;
   margin-left: 15px;
 }
 /* GRID image */
 .produits img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   /* margin-left: 15px; */
 }
 .card {
@@ -88,11 +102,11 @@ p {
   line-height: 1.6;
 }
 .produits h4 {
-  margin-left: 25px;
+  margin-left: 15px;
   color: #474444;
 }
 .produits p {
-  margin-left: 25px;
+  margin-left: 5px;
   color: #5e5e5e;
 }
 .button {
@@ -111,15 +125,71 @@ button {
   color: lightskyblue;
   overflow: hidden;
 }
+/* Pour les prix */
+div.card span {
+  position: relative;
+  /* pour le positionner en haut de ma div */
+  top: -235px;
+  left: 10px;
+  /* pour la couleur de font blanc un peu transparent */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 10px;
+  font-size: 16px;
+}
 /* partie FOOTER */
+/* Pour le trait */
+div.trait {
+  height: 1px;
+  width: 40%;
+  background-color: #fffae1;
+  margin: 60px auto;
+}
 footer {
-  background-color: lightskyblue;
-  height: 300px;
+  background-color: rgb(126, 172, 203);
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  /* Pour le trait */
+  /* border-bottom: 2px solid #fff; */
+}
+.footer_section {
+  width: 40%;
+}
+.footer_section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer_section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_section ul li {
+  /* pour mettre de l'espace entre les li */
+  margin-bottom: 10px;
+}
+.footer_section ul li a {
+  text-decoration: none;
   color: #fff;
 }
-div.trait {
-  height: 0.1px;
-  width: 70%;
-  background-color: #fffae1;
-  margin: 30px auto;
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 10px 50px;
+  flex-direction: row-reverse;
+}
+.social_icons i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.footer_bottom p {
+  padding: 0 50px;
+  display: flex;
+  align-items: flex-end;
 }
