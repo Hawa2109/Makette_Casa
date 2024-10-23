@@ -36,14 +36,16 @@ header nav {
   justify-content: space-around;
   align-items: center;
   background-color: transparent;
-  backdrop-filter: blur(200em);
-  height: 70px;
+  backdrop-filter: blur(200px);
+  height: 60px;
   opacity: 15;
+  /* position: fixed; */
+  width: 100%;
 }
 header {
   background: url(../images/bg.jpg);
   background-size: cover;
-  height: 700px;
+  height: 740px;
 }
 header h1,
 p {
