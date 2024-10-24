@@ -3,7 +3,7 @@
 /* MEDIAQUERIE */
 
 /* Exemple de media query pour les écrans de moins de 768px (tablettes et mobiles) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768.98px) {
   header h1 {
     font-size: 3em; /* Réduire la taille du titre sur mobile */
   }
@@ -15,7 +15,7 @@
   }
 }
 /* Adaptation pour des écrans plus petits */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600.98px) {
   .produits {
     grid-template-columns: 1fr; /* Une seule colonne sur mobile */
   }
@@ -36,14 +36,14 @@ img {
 }
 
 /* Pour les écrans de moins de 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768.98px) {
   .produits {
     grid-template-columns: repeat(2, 1fr); /* Passer à 2 colonnes */
   }
 }
 
 /* Pour les écrans de moins de 600px (mobiles) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600.98px) {
   .produits {
     grid-template-columns: 1fr; /* Une seule colonne */
   }
@@ -99,7 +99,7 @@ header nav {
 header {
   background: url(../images/bg.jpg);
   background-size: cover;
-  height: 740px;
+  height: 785px;
 }
 header h1,
 p {
