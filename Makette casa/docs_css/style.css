@@ -1,58 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
-
-/* MEDIAQUERIE */
-
-/* Exemple de media query pour les écrans de moins de 768px (tablettes et mobiles) */
-@media screen and (max-width: 768.98px) {
-  header h1 {
-    font-size: 3em; /* Réduire la taille du titre sur mobile */
-  }
-  .produits {
-    grid-template-columns: auto auto; /* 2 colonnes au lieu de 3 sur mobile */
-  }
-  button {
-    width: 100%; /* Adapter le bouton à la largeur de l'écran */
-  }
-}
-/* Adaptation pour des écrans plus petits */
-@media screen and (max-width: 600.98px) {
-  .produits {
-    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
-  }
-}
-
-button {
-  width: 50%; /* Le bouton prendra 50% de la largeur disponible */
-}
-img {
-  max-width: 100%; /* Limite la taille de l'image à la largeur de son conteneur */
-  height: auto; /* Préserve les proportions */
-}
-/* Styles par défaut (pour les grands écrans) */
-.produits {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px 40px;
-}
-
-/* Pour les écrans de moins de 768px */
-@media screen and (max-width: 768.98px) {
-  .produits {
-    grid-template-columns: repeat(2, 1fr); /* Passer à 2 colonnes */
-  }
-}
-
-/* Pour les écrans de moins de 600px (mobiles) */
-@media screen and (max-width: 600.98px) {
-  .produits {
-    grid-template-columns: 1fr; /* Une seule colonne */
-  }
-  header h1 {
-    font-size: 3em; /* Réduire la taille du titre */
-  }
-}
-
-
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +31,18 @@ nav div.logo {
   font-style: italic;
   font-family: "Dancing Script", cursive;
 }
+/* Une transition */
+ nav a {
+   transition: 0.5s ease-out;
+  cursor: pointer;
+  
+} 
+
+ nav a:hover{
+  background-color: rgba(5, 78, 84, 0.712) ;
+  border-radius: 5px;
+  padding: 10px;
+} 
 header nav {
   display: flex;
   justify-content: space-around;
@@ -119,6 +77,16 @@ header h1 {
   font-family: "Dancing Script", cursive;
   font-size: 6em;
 }
+h1{
+   transition: 0.7s ease-out;
+  cursor: pointer;
+}
+h1:hover {
+  color: rgb(6, 74, 74);
+   transform: scale(1.07);
+}
+
+
 /* POUR LA SECTION */
 section div.para {
   text-transform: uppercase;
@@ -136,22 +104,29 @@ section div.para {
 }
 /* Pour la SECTION GRID */
 .produits {
-  display: grid;
-  grid-template-columns: auto auto auto;
   justify-content: center;
   gap: 30px 40px;
-  margin-left: 15px;
+  margin: 55px;
 }
 /* GRID image */
 .produits img {
   width: 100%;
-  height: 250px;
-  /* margin-left: 15px; */
+  border-radius: 10px;
+}
+.produits div.card{
+   transition: 0.7s ease-out;
+  cursor: pointer;
+}
+.produits div.card:hover{
+  transform: scale(1.07);
+  box-shadow: 5px 8px 13px 3px rgb(97, 192, 220);
 }
 .card {
   background-color: #fff;
   border: 1px solid grey;
   margin-top: 20px;
+    border-radius: 10px;
+  /* box-shadow: 5px 8px 13px 3px rgb(97, 192, 220); */
 }
 .produits h4,
 p {
@@ -181,12 +156,24 @@ button {
   color: lightskyblue;
   overflow: hidden;
 }
+button{
+   transition: 0.7s ease-out;
+  cursor: pointer;
+}
+button:hover{
+  /* background-color: rgba(81, 97, 99, 0.601) ; */
+  transform: scale(1.07);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 8px 13px 3px rgb(25, 3, 57);
+} 
+
 /* Pour les prix */
 div.card span {
   position: relative;
   /* pour le positionner en haut de ma div */
-  top: -235px;
-  left: 10px;
+  top: -425px;
+  left: 10px;  
   /* pour la couleur de font blanc un peu transparent */
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 10px;
@@ -249,3 +236,54 @@ footer {
   display: flex;
   align-items: flex-end;
 }
+ footer a {
+   transition: 0.5s ease-out;
+  cursor: pointer;
+  
+} 
+
+ footer a:hover{
+  background-color: rgba(81, 97, 99, 0.601) ;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 8px 13px 3px rgb(25, 3, 57);
+} 
+
+/* MEDIAQUERIE */
+
+
+button {
+  width: 50%; /* Le bouton prendra 50% de la largeur disponible */
+}
+img {
+  max-width: 100%; /* Limite la taille de l'image à la largeur de son conteneur */
+  height: auto; /* Préserve les proportions */
+}
+/* Styles par défaut (pour les grands écrans) */
+.produits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+}
+
+/* Pour les écrans de moins de 768px */
+@media screen and (max-width: 768.98px) {
+  .produits {
+    grid-template-columns: repeat(2, 1fr);  /*Passer à 2 colonnes*/ 
+  }
+}
+
+/* Pour les écrans de moins de 600px (mobiles) */
+@media screen and (max-width: 600.98px) {
+  .produits {
+    grid-template-columns: repeat(1,1fr);  /* une seule colonne */
+  }
+  header h1 {
+    font-size: 3em; /* Réduire la taille du titre */
+  }
+}
+
+
+
+
+
