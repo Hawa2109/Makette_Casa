@@ -154,7 +154,6 @@ p {
   color: #474444;
 }
 .produits p {
-  margin-left: 5px;
   color: #5e5e5e;
 }
 .button {
@@ -195,8 +194,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
-  /* Pour le trait */
-  /* border-bottom: 2px solid #fff; */
 }
 .footer_section {
   width: 40%;
@@ -236,11 +233,6 @@ div.trait {
   width: 95%;
   background-color: #fffae1;
   margin: 50px auto;
-}
-.footer_bottom p {
-  padding: 0 50px;
-  display: flex;
-  font-size: small;
 }
 
 footer a {
