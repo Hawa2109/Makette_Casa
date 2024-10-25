@@ -165,7 +165,7 @@ p {
 button {
   position: absolute;
   padding: 10px 20px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
   border: 2px solid lightskyblue;
   font-size: 14px;
   background: transparent;
@@ -265,6 +265,10 @@ img {
 
 /* Pour les écrans de moins de 768px */
 @media screen and (max-width: 768.98px) {
+  header {
+    background: url(../images/bg.jpg);
+    height: 300px;
+  }
   .produits {
     grid-template-columns: repeat(2, 1fr); /*Passer à 2 colonnes*/
   }
@@ -283,6 +287,12 @@ img {
   header h1 {
     font-size: 3em; /* Réduire la taille du titre */
   }
+  header {
+    background: url(../images/bg.jpg);
+    height: 200px;
+    background-size: contain;
+  }
+
   div.card span {
     font-size: 12px;
     top: 3px;
