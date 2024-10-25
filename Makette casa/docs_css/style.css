@@ -46,7 +46,6 @@ header nav {
   backdrop-filter: blur(10px);
   height: 60px; /* pour garder la hauteur de la navigation */
   display: flex;
-  display: flex;
   justify-content: space-around;
   align-items: center;
 }
