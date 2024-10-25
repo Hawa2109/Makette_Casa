@@ -184,13 +184,6 @@ button:hover {
   box-shadow: 5px 8px 13px 3px rgb(25, 3, 57);
 }
 /* partie FOOTER */
-/* Pour le trait */
-div.trait {
-  height: 1px;
-  width: 40%;
-  background-color: #fffae1;
-  margin: 60px auto;
-}
 footer {
   background-color: rgb(126, 172, 203);
   color: #fff;
@@ -208,7 +201,7 @@ footer {
 .footer_section {
   width: 40%;
 }
-.footer_section h4 {
+.footer_section h5 {
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -224,22 +217,32 @@ footer {
   text-decoration: none;
   color: #fff;
 }
-.footer_bottom {
+
+.footer_bottom:not(.trait p) {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  padding: 10px 50px;
-  flex-direction: row-reverse;
+  padding: 10px 150px;
+  margin-right: 70px;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 18px;
 }
 .social_icons i {
-  margin-right: 5px;
-  font-size: 18px;
+  padding: 10px;
+}
+/* Pour le trait */
+div.trait {
+  height: 1px;
+  width: 95%;
+  background-color: #fffae1;
+  margin: 50px auto;
 }
 .footer_bottom p {
   padding: 0 50px;
   display: flex;
-  align-items: flex-end;
+  font-size: small;
 }
+
 footer a {
   transition: 0.5s ease-out;
   cursor: pointer;
