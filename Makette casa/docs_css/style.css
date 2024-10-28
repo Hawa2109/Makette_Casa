@@ -119,10 +119,7 @@ section div.para {
 .produits img {
   width: 100%;
 }
-.produits div.card {
-  transition: 0.7s ease-out;
-  cursor: pointer;
-}
+
 
 .card {
   position: relative;
@@ -131,6 +128,10 @@ section div.para {
   margin-top: 20px;
   /* border-radius: 10px; */
   box-shadow: 5px 8px 13px 3px rgb(3, 75, 97);
+}
+.produits div.card {
+  transition: 0.7s ease-out;
+  cursor: pointer;
 }
 .produits div.card:hover {
   transform: scale(1.07);
@@ -178,6 +179,7 @@ button {
 }
 button:hover {
   transform: scale(1.07);
+  background-color: rgb(4, 61, 90);
   border-radius: 5px;
   padding: 10px;
   box-shadow: 5px 8px 13px 3px rgb(25, 3, 57);
