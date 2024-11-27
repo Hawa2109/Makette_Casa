@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 60px; /* Ajuster le padding selon la hauteur de la nav */
+}
+
+header ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 20px; */
+}
+header li.border {
+  border-radius: 20px;
+  padding: 5px;
+  border: 1.5px solid white;
+}
+header ul {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+/* pour le logo la casa */
+nav div.logo {
+  font-size: 1.7em;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(23, 88, 108, 0.7);
+  backdrop-filter: blur(10px);
+  height: 60px; /* pour garder la hauteur de la navigation */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Une transition */
+nav a {
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: rgba(5, 78, 84, 0.712);
+  border-radius: 10px;
+  padding: 10px;
+}
+header {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  height: 785px;
+}
+header h1,
+p {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+header p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+}
+header h1 {
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 6em;
+}
+h1 {
+  transition: 0.7s ease-out;
+  cursor: pointer;
+}
+h1:hover {
+  color: rgb(6, 74, 74);
+  transform: scale(1.07);
+}
+
+/* POUR LA SECTION */
+section div.para {
+  text-transform: uppercase;
+  color: rgb(54, 108, 115);
+  background-color: rgb(119, 178, 195);
+  height: 50px;
+  font-weight: bold;
+}
+/* pour les positions */
+section div.para {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+/* Pour la SECTION GRID */
+.produits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales*/
+  gap: 30px 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+/* GRID image */
+.produits img {
+  width: 100%;
+}
+
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid grey;
+  margin-top: 20px;
+  /* border-radius: 10px; */
+  box-shadow: 5px 8px 13px 3px rgb(3, 75, 97);
+}
+.produits div.card {
+  transition: 0.7s ease-out;
+  cursor: pointer;
+}
+.produits div.card:hover {
+  transform: scale(1.07);
+  box-shadow: 5px 8px 13px 3px rgb(188, 82, 220);
+}
+div.card span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.produits h4,
+p {
+  line-height: 1.6;
+}
+.produits h4 {
+  margin-left: 15px;
+  color: #474444;
+}
+.produits p {
+  color: #5e5e5e;
+}
+.button {
+  height: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+button {
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid lightskyblue;
+  font-size: 14px;
+  background: transparent;
+  color: lightskyblue;
+  overflow: hidden;
+}
+button {
+  transition: 0.7s ease-out;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.07);
+  background-color: rgb(4, 61, 90);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 8px 13px 3px rgb(25, 3, 57);
+}
+/* partie FOOTER */
+footer {
+  background-color: rgb(126, 172, 203);
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.footer_section {
+  width: 40%;
+}
+.footer_section h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer_section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_section ul li {
+  /* pour mettre de l'espace entre les li */
+  margin-bottom: 10px;
+}
+.footer_section ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer_bottom:not(.trait p) {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+  margin-right: 70px;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 18px;
+}
+.social_icons i {
+  padding: 10px;
+}
+/* Pour le trait */
+div.trait {
+  height: 1px;
+  width: 95%;
+  background-color: #fffae1;
+  margin: 50px auto;
+}
+
+footer a {
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+footer a:hover {
+  background-color: rgba(81, 97, 99, 0.601);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 8px 13px 3px rgb(25, 3, 57);
+}
+
+/* MEDIAQUERIE */
+
+button {
+  width: 50%; /* Le bouton prendra 50% de la largeur disponible */
+}
+img {
+  max-width: 100%; /* Limite la taille de l'image à la largeur de son conteneur */
+  height: auto; /* Préserve les proportions */
+}
+/* Styles par défaut (pour les grands écrans) */
+.produits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+}
+
+/* Pour les écrans de moins de 768px */
+@media screen and (max-width: 768.98px) {
+  header {
+    background: url(../images/bg.jpg);
+    height: 300px;
+  }
+  .produits {
+    grid-template-columns: repeat(2, 1fr); /*Passer à 2 colonnes*/
+  }
+  div.card span {
+    font-size: 14px;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+/* Pour les écrans de moins de 600px (mobiles) */
+@media screen and (max-width: 600.98px) {
+  .produits {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile*/
+  }
+  header h1 {
+    font-size: 3em; /* Réduire la taille du titre */
+  }
+  header {
+    background: url(../images/bg.jpg);
+    height: 200px;
+    background-size: contain;
+  }
+
+  div.card span {
+    font-size: 12px;
+    top: 3px;
+    left: 3px;
+    padding: 3px 6px;
+  }
+}
